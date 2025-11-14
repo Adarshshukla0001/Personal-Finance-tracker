@@ -1,4 +1,3 @@
-/* About page — custom layout to match screenshot */
 .about-main {
   max-width: 1100px;
   margin: 48px auto 0 auto;
@@ -49,7 +48,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: flex-start; /* align caption and decor to image's left edge */
+  align-items: flex-start; 
   flex: 1 1 420px;
 }
 
@@ -115,9 +114,9 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  align-self: flex-start; /* keep caption under the image, not centered in the column */
+  align-self: flex-start;
   width: 100%;
-  max-width: 420px; /* match image width */
+  max-width: 420px; 
   padding-left: 8px;
   text-align: left;
 }
@@ -127,14 +126,30 @@
 }
 
 .about-img-decor {
-  display: none; /* decorative bar removed per design */
+  display: none; 
 }
 
-  /* ...existing code... */
-.security, .roadmap { flex: 1 1 300px; background: #fff; padding: 18px; border-radius: 10px; box-shadow: 0 10px 24px rgba(6,33,36,0.06); }
+.security, .roadmap { 
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(6,33,36,0.06);
+     }
 
-.team-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 12px; }
-.member { background: #fff; padding: 14px; border-radius: 8px; box-shadow: 0 8px 20px rgba(6,33,36,0.05); width: 260px; }
+.team-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 12px; }
+.member {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(6,33,36,0.05);
+  width: 260px; }
 
-.about-cta { text-align: center; }
+.about-cta {
+  text-align: center; 
+}
 
