@@ -1,0 +1,140 @@
+/* About page — custom layout to match screenshot */
+.about-main {
+  max-width: 1100px;
+  margin: 48px auto 0 auto;
+  padding: 0 24px 64px 24px;
+}
+
+.about-header {
+  text-align: left;
+  margin-bottom: 32px;
+}
+.about-header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #182b36;
+}
+.about-header .about-sub {
+  font-size: 24px;
+  color: #222;
+  font-weight: 400;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  flex: 1 1 340px;
+  max-width: 420px;
+  min-width: 260px;
+  aspect-ratio: 4/3;
+  display: block;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-media {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start; /* align caption and decor to image's left edge */
+  flex: 1 1 420px;
+}
+
+.about-cards {
+  flex: 2 1 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(6,33,36,0.10);
+  padding: 28px 32px 24px 32px;
+  text-align: left;
+}
+.about-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a3a40;
+}
+.about-card p {
+  font-size: 16px;
+  color: #2a3d4a;
+  margin-bottom: 0;
+}
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-list li {
+  font-size: 16px;
+  color: #1a3a40;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-list i {
+  color: #24c08c;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+  }
+  .about-img, .about-cards {
+    max-width: 100%;
+  }
+}
+
+.about-img-caption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #4a6a7a;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start; /* keep caption under the image, not centered in the column */
+  width: 100%;
+  max-width: 420px; /* match image width */
+  padding-left: 8px;
+  text-align: left;
+}
+
+.about-img-caption i {
+  display: none;
+}
+
+.about-img-decor {
+  display: none; /* decorative bar removed per design */
+}
+
+  /* ...existing code... */
+.security, .roadmap { flex: 1 1 300px; background: #fff; padding: 18px; border-radius: 10px; box-shadow: 0 10px 24px rgba(6,33,36,0.06); }
+
+.team-grid { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 12px; }
+.member { background: #fff; padding: 14px; border-radius: 8px; box-shadow: 0 8px 20px rgba(6,33,36,0.05); width: 260px; }
+
+.about-cta { text-align: center; }
+
