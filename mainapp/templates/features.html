@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finora - Features</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/features.css' %}">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="{% static 'images/logo5.png' %}" alt="Finora Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/features/" class="active">Features</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/transactions/new/" class="btn-primary">+ New Transaction</a>
+      <a href="/accounts/login/" class="nav-text">Sign In</a>
+      <a href="/accounts/signup/" class="nav-text">Sign Up</a>
+    </div>
+  </header>
+
+  <section class="features-hero">
+    <h1>Unlock Your Financial Potential</h1>
+    <p class="features-sub">Powerful Tools for a Smarter Money Journey</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-bell"></i></div>
+        <h3>Smart Alerts</h3>
+        <p>Stay on budget with automated notifications when spending exceeds your custom threshold.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Track Everything</h3>
+        <p>Effortlessly log income & expenses, categorize transactions, and gain clear insights.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-chart-pie"></i></div>
+        <h3>Visual Insights</h3>
+        <p>See where your money goes with interactive charts and detailed financial reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reuse promo card (styled by home.css) -->
+  <section class="promo">
+    <div class="promo-card">
+      <div class="promo-image">
+        <img src="{% static 'images/banner.png' %}" alt="Promo Image">
+      </div>
+      <div class="promo-box">
+        <h2>Take Control of Your Money</h2>
+
+        <ul>
+          <li>Bank Account Sync (Optional)</li>
+          <li>Bill Reminders (Coming Soon)</li>
+        </ul>
+        <a href="/accounts/signup/" class="cta-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-wrap">
+    <footer>
+      <p>© 2025 Finora. Designed by Adarsh Shukla.</p>
+    </footer>
+  </section>
+
+  <script src="{% static 'mainapp/features.js' %}"></script>
+</body>
+</html>

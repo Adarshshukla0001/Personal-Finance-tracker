@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Finora</title>
+  <!-- Font Awesome + shared home styles for consistent look -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about2.css' %}">
+</head>
+<body>
+  <!-- shared navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="{% static 'images/logo5.png' %}" alt="Finora Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/" class="active">About</a>
+      <a href="/features/">Features</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/transactions/new/" class="btn-primary">+ New Transaction</a>
+      <a href="/accounts/login/" class="nav-text">Sign In</a>
+      <a href="/accounts/signup/" class="nav-text">Sign Up</a>
+    </div>
+  </header>
+
+  <section class="about-main">
+    <div class="about-header">
+      <h1>About Finora</h1>
+      <p class="about-sub">Your Partner for a Smarter Financial Future</p>
+    </div>
+    <div class="about-content">
+      <div class="about-media">
+        <div class="about-img">
+          <img src="{% static 'images/about.png' %}" alt="About Finora Team" />
+        </div>
+        <div class="about-img-caption">
+  <span>The Finora team — collaborating daily to build intuitive dashboards, secure sync, and actionable insights that help you take control of your finances.</span>
+        </div>
+        
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>To empower individuals worldwide to achieve financial peace of mind through intelligent, accessible, and automated money management tools.</p>
+        </div>
+        <div class="about-card">
+          <h3>Why We Built Finora</h3>
+          <p>Frustrated by complex, specialist, and static apps, Finora was designed to be your always-on partner for financial well-being.</p>
+        </div>
+        <div class="about-card">
+          <h3>Key Principles</h3>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-shield-halved"></i> Security &amp; Privacy</li>
+            <li><i class="fa-solid fa-robot"></i> Intelligent Automation</li>
+            <li><i class="fa-solid fa-eye"></i> Clarity &amp; Control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-wrap">
+    <footer>
+      <p>© 2025 Finora. Designed by Adarsh Shukla.</p>
+      
+    </footer>
+  </section>
+
+  <script src="{% static 'mainapp/about.js' %}"></script>
+</body>
+</html>

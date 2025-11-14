@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finora - Smart Finance Tracker</title>
+  <!-- Font Awesome for feature icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="{% static 'images/logo5.png' %}" alt="Finora Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/features/">Features</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="/transactions/new/" class="btn-primary">+ New Transaction</a>
+      <a href="/accounts/login/" class="nav-text">Sign In</a>
+      <a href="/accounts/signup/" class="nav-text">Sign Up</a>
+    </div>
+  </header>
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-emblem">
+        <img src="{% static 'images/logo5.png' %}" alt="Finora emblem">
+      </div>
+      <p class="hero-tagline">Smart. Secure. Your Financial Journey.</p>
+      <a href="/accounts/signup/" class="cta-btn">Get Started – It's Free!</a>
+    </div>
+    
+  </section>
+
+  <!-- ========== FEATURES SECTION ========== -->
+  <section class="features-split">
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-bell" aria-hidden="true"></i>
+      </div>
+      <div class="feature-text">
+        <h3>Smart Alerts</h3>
+        <p>Get notified instantly when your spending crosses your set limits.</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+      </div>
+      <div class="feature-text">
+        <h3>Track Everything</h3>
+        <p>Monitor all your income and expenses in one unified dashboard.</p>
+      </div>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-chart-pie" aria-hidden="true"></i>
+      </div>
+      <div class="feature-text">
+        <h3>Visual Insights</h3>
+        <p>Understand your finances with beautiful, easy-to-read graphs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROMO SECTION ========== -->
+  <section class="promo">
+    <div class="promo-card">
+      <div class="promo-image">
+        <img src="{% static 'images/banner.png' %}" alt="Promo Image">
+      </div>
+      <div class="promo-box">
+        <h2>Take Control of Your Money</h2>
+
+        <ul>
+          <li>Connects to your bank (Optional)</li>
+          <li>Generate custom PDF/CSV reports</li>
+          <li>Reorganized transactions for clarity</li>
+        </ul>
+        <a href="/accounts/signup/" class="cta-btn">Sign Up Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- feature dots removed as requested -->
+
+  <!-- ========== FOOTER ========== -->
+  <section class="footer-wrap">
+    <footer>
+      <p>© 2025 Finora. Designed by Adarsh Shukla.</p>
+    </footer>
+  </section>
+
+</body>
+</html>
